@@ -1,0 +1,6 @@
+[submodule "tormenta-server"]
+	path = tormenta-server
+	url = https://github.com/groundhogs/tormenta-server.git
+[submodule "tormenta-client"]
+	path = tormenta-client
+	url = https://github.com/groundhogs/tormenta-client.git

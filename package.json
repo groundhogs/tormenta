@@ -1,0 +1,17 @@
+{
+  "name": "tormenta",
+  "version": "0.0.1",
+  "description": "Tormenta is a complete micropub implementation, with a client and a server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "git submodule add -f https://github.com/groundhogs/tormenta-server.git && git submodule add -f https://github.com/groundhogs/tormenta-client.git"
+  },
+  "keywords": [
+    "micropub",
+    "blog",
+    "blogging"
+  ],
+  "author": "Carlos Vergara <cfvergara@gmail.com>",
+  "license": "CC-BY-NC-SA-4.0"
+}
