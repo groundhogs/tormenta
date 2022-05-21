@@ -1,6 +1,6 @@
 # Tormenta
 
-Tormenta is a complet [micropub][1] implementation, with a [server component][2] and a [client component][3].
+Tormenta is a complete [micropub][1] implementation, with a [server component][2] and a [client component][3].
 
 ## Installation
 
@@ -8,6 +8,7 @@ For development:
 
 1. Clone this repository: `$ git clone https://github.com/groundhogs/tormenta.git`
 2. Install the project: `$ npm install`
+3. Install the project's components: `$ npm install-components`
 
 ## License
 

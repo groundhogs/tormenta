@@ -1,3 +1,4 @@
 node_modules
 tormenta-client
 tormenta-server
+*.log

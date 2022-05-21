@@ -5,13 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "git submodule add -f https://github.com/groundhogs/tormenta-server.git && git submodule add -f https://github.com/groundhogs/tormenta-client.git"
+    "preinstall": "git submodule add -f https://github.com/groundhogs/tormenta-server.git && git submodule add -f https://github.com/groundhogs/tormenta-client.git && git config submodule.tormenta-server.ignore all && git config submodule.tormenta-client.ignore all",
+    "install-components": "npm --prefix tormenta-server install && npm --prefix tormenta-client install"
   },
   "keywords": [
     "micropub",
     "blog",
     "blogging"
   ],
+  "workspaces": [
+    "tormenta-client",
+    "tormenta-server"
+  ],
   "author": "Carlos Vergara <cfvergara@gmail.com>",
-  "license": "CC-BY-NC-SA-4.0"
+  "license": "CC-BY-NC-SA-4.0",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.14.39",
+    "typescript": "^4.6.4"
+  }
 }
